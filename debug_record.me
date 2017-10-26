@@ -1,0 +1,62 @@
+webpack 打包时报错：
+Invalid configuration object. Webpack has been initialised using a configuration object
+ that does not match the API schema.
+ - configuration.output.path: The provided value "./dist/" is not an absolute path!
+解决方案： http://www.imooc.com/qadetail/217703
+在webpack.config.js中path处加入__direction将相对地址转换为绝对地址,`path: __dirname + '/dist',`
+
+
+React16已经没有createClass方法了，用es6 class代替：
+http://www.imooc.com/qadetail/238222?t=381330
+
+关于getInitialState提示：
+Warning: getInitialState was defined on Root, a plain JavaScript class. This is only supported for classes created using React.createClass. Did you mean to define a state property instead?
+https://stackoverflow.com/questions/30720620/react-es6-getinitialstate-was-defined-on-a-plain-javascript-class
+解决方法：
+
+progress={ this.state.progress } 中绑定的数据类型很重要，不要加上引号，否则会被当做纯字符串处理
+
+
+
+
+main.js:1075 Warning: React.createElement: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in.
+
+            // http://blog.csdn.net/sinat_17775997/article/details/70155252  
+
+
+
+
+
+
+
+
+
+
+
+
+扇贝第13期读书营免费体验活动，目前是一个小范围的体验活动，青梅小组有5个免费体验的试读名额，但**需要在读完试读书籍后写读后感**，想要参加的小伙伴尽快报名，
+
+关于读书营，可以参考第12期活动贴:[扇贝读书营推出《哈利·波特》，快进入魔法世界学英语！](http://mp.weixin.qq.com/s?__biz=MjM5NzIyMjkwMA==&mid=2654377331&idx=1&sn=9e5369d7bcf21514a34a86f2da60d45d&chksm=bd1f75e88a68fcfec652b31812be158dd34048ea3972c0ceaccb0f564c78001643a44a73723b&mpshare=1&scene=23&srcid=1026yHEtgYfjN0jyJuKqTXT7#rd)
+(若链接失效，可以通过扇贝官方微信公众号查找同名贴)
+
+### 关于书籍和名额
+1. 《哈利·波特与魔法石》，1个名额
+2. 入门级别：《呼啸山庄》/《简爱》/ 《傲慢与偏见》/ 《了不起的盖茨比》其一，2个名额
+3. 进阶级别：《小王子》/《芒果街上的小屋》/ 《绿野仙踪》/《爱丽丝漫游奇境记》其一，2个名额
+
+### 关于读后感
+1. 读后感**内容不限，格式不限**，可以有对读书营/阅读APP/试读书籍的感想心得，也可以是学习笔记。
+2. 读后感**字数不得少于200字**
+3. 读后感需**真实可信，最好能格式良好，图文并茂**
+3. 读后感会被记录并置顶在小组内，供其他小伙伴查看、学习、交流。
+4. 读后感需要在试读结束1天内完成
+
+### 关于报名
+1. **截止时间：2017年10月27日 正午12点**
+2. 必须发送如下个人信息给组长（必须通过短信发送给组长）：
+ - **扇贝ID、微信号、是否有微博、微博粉丝数、是否有知乎、知乎粉丝数、学历、英语水平、是否参加工作**
+ - **报名的书籍（只能选择一个，量力而为）**
+ - 申请的理由或个人情况说明
+
+个人信息不会被透露给其他人（除了组长和扇贝工作人员）
+
