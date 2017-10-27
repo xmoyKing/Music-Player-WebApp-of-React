@@ -1,5 +1,12 @@
 export const MUSIC_LIST = [
     {
+        id: 0,
+        name: '歌曲0',
+        artist: '歌手0',
+        file: '/static/music/0.mp3',
+        cover: '/static/images/logo.png'
+    },
+    {
         id: 1,
         name: '歌曲1',
         artist: '歌手1',
